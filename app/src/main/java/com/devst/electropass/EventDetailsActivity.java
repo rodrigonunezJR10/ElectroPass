@@ -77,10 +77,8 @@ public class EventDetailsActivity extends AppCompatActivity {
             calIntent.putExtra(CalendarContract.Events.TITLE, "Festival ElectroPass: Afterlife Santiago");
             calIntent.putExtra(CalendarContract.Events.EVENT_LOCATION, "Espacio Riesco, Santiago");
             calIntent.putExtra(CalendarContract.Events.DESCRIPTION, "Pase VIP validado biométricamente.");
-            calIntent.putExtra(CalendarContract.EXTRA_CUSTOM_SECRET_KEY, fechaInicio.getTimeInMillis());
             calIntent.putExtra(CalendarContract.EXTRA_EVENT_BEGIN_TIME, fechaInicio.getTimeInMillis());
             calIntent.putExtra(CalendarContract.EXTRA_EVENT_END_TIME, fechaTermino.getTimeInMillis());
-
             try {
                 startActivity(calIntent);
             } catch (Exception e) {
