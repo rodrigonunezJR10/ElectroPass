@@ -30,6 +30,15 @@ Cumplimiento estricto de los 8 intents requeridos por la pauta de evaluación[ci
 3. **`MainActivity` ➔ `EventDetailsActivity` (Traspaso de Datos)**[cite: 8]
     * **Mecanismo:** `Intent.putExtra()` y `getIntent().getStringExtra()`[cite: 8].
     * **Objetivo:** Transfiere el nombre de usuario autenticado y el festival seleccionado a la pantalla de detalle del ticket[cite: 8].
+###
+
+   Capturas
+<img width="696" height="422" alt="image" src="https://github.com/user-attachments/assets/2eeacf16-33c5-4db4-a29d-cfee6335cc41" />
+<img width="183" height="305" alt="image" src="https://github.com/user-attachments/assets/4d0ec0dc-0eb8-4172-8974-87de42e333cb" />
+<img width="358" height="299" alt="image" src="https://github.com/user-attachments/assets/e33bb3f5-3eb2-4b8b-85e2-4dbc47708cd5" />
+<img width="391" height="311" alt="image" src="https://github.com/user-attachments/assets/a2a3758e-150e-4db9-8403-1fa20c529100" />
+<img width="288" height="386" alt="image" src="https://github.com/user-attachments/assets/a7a9449d-82a4-4bb2-81b7-1721485120d2" />
+
 
 ### 🔸 5 Intents Implícitos
 
