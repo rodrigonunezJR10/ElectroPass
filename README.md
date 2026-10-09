@@ -64,5 +64,4 @@ Cumplimiento estricto de los 8 intents requeridos por la pauta de evaluación[ci
 ---
 
 ## 📸 Capturas de Pantalla
-
 *(Espacio reservado para agregar mínimo 4 capturas una vez compilado y probado en el emulador)*[cite: 8]
