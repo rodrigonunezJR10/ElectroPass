@@ -1,10 +1,87 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".EventDetailsActivity">
+    android:padding="20dp"
+    android:fillViewport="true">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pase de Acceso Confirmado"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="6dp" />
+
+        <TextView
+            android:id="@+id/tvBienvenidaUsuario"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Titular: ..."
+            android:textSize="16sp"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Tarjeta visual de información del Ticket -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#F0F4F8"
+            android:padding="16dp"
+            android:layout_marginBottom="24dp">
+
+            <TextView
+                android:id="@+id/tvNombreEvento"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Evento: Afterlife Santiago 2026"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:layout_marginBottom="6dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Lugar: Espacio Riesco, Huechuraba"
+                android:textSize="14sp"
+                android:layout_marginBottom="4dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Acceso: Sector VIP General"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <!-- Intent Implícito 4: Abrir Google Maps con coordenadas/lugar -->
+        <Button
+            android:id="@+id/btnVerMapa"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ver Recinto en Google Maps"
+            android:layout_marginBottom="10dp" />
+
+        <!-- Intent Implícito 5: Insertar evento en la app de Calendario -->
+        <Button
+            android:id="@+id/btnAgendarCalendario"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Agendar Evento en Calendario"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Botón para cerrar y volver al login -->
+        <Button
+            android:id="@+id/btnVolverLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Cerrar Sesión" />
+
+    </LinearLayout>
+</ScrollView>
