@@ -1,10 +1,69 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".FaceScanActivity">
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:padding="20dp">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <TextView
+        android:id="@+id/tvTituloScan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Verificación Facial VIP"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="8dp" />
+
+    <TextView
+        android:id="@+id/tvUsuarioScan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Usuario: -"
+        android:textSize="16sp"
+        android:layout_marginBottom="20dp" />
+
+    <!-- Vista previa de la foto capturada -->
+    <ImageView
+        android:id="@+id/ivFacePreview"
+        android:layout_width="220dp"
+        android:layout_height="220dp"
+        android:background="#E0E0E0"
+        android:contentDescription="Vista previa rostro"
+        android:scaleType="centerCrop"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Barra de progreso para el procesamiento en Thread -->
+    <ProgressBar
+        android:id="@+id/pbProcesando"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_marginBottom="12dp" />
+
+    <TextView
+        android:id="@+id/tvEstadoProceso"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Presiona el botón para tomar tu fotografía"
+        android:textSize="14sp"
+        android:layout_marginBottom="24dp" />
+
+    <!-- Intent Implícito: Tomar foto con la cámara -->
+    <Button
+        android:id="@+id/btnTomarFoto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Abrir Cámara y Capturar Rostro"
+        android:layout_marginBottom="10dp" />
+
+    <!-- Confirmación manual tras el análisis del Thread -->
+    <Button
+        android:id="@+id/btnConfirmarAcceso"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:enabled="false"
+        android:text="Confirmar e Ingresar" />
+
+</LinearLayout>
