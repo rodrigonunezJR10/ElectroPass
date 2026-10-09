@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ElectroPass"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="4dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Acceso Biométrico &amp; Tickets para Eventos"
+            android:textSize="14sp"
+            android:layout_marginBottom="28dp" />
+
+        <!-- Campo de entrada del usuario -->
+        <EditText
+            android:id="@+id/etUsuario"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nombre de usuario o Email"
+            android:inputType="textEmailAddress"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Intent Explícito 1: Inicia verificación facial esperando resultado -->
+        <Button
+            android:id="@+id/btnFaceLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ingresar con Verificación Facial"
+            android:layout_marginBottom="10dp" />
+
+        <!-- TextView para reflejar el estado retornado por el escaneo -->
+        <TextView
+            android:id="@+id/tvEstadoAuth"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Estado: Esperando validación"
+            android:textStyle="italic"
+            android:layout_marginBottom="24dp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#D1D1D1"
+            android:layout_marginBottom="20dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Servicios y Soporte"
+            android:textStyle="bold"
+            android:layout_marginBottom="12dp" />
+
+        <!-- Intent Implícito 1: Correo de soporte -->
+        <Button
+            android:id="@+id/btnSoporteEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Soporte de Tickets (Email)"
+            android:layout_marginBottom="10dp" />
+
+        <!-- Intent Implícito 2: Sitio web oficial -->
+        <Button
+            android:id="@+id/btnSitioWeb"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ver Festivales Oficiales (Web)"
+            android:layout_marginBottom="16dp" />
+
+    </LinearLayout>
+</ScrollView>
